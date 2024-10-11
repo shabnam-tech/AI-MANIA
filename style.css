@@ -1,0 +1,314 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #003366; /* Dark teal */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em; /* Large heading */
+}
+
+header p {
+    font-size: 1.2em; /* Subheading */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+    color: #ffffff; /* White links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color change */
+}
+
+nav ul li a:hover {
+    color: #e0f2f1; /* Light teal on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #b2ebf2; /* Light cyan background */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    color: #004d40; /* Dark teal */
+}
+
+/* About Section */
+#about {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#about h2 {
+    text-align: center;
+    color: #111030; /* Dark green */
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Photo Gallery Section */
+#gallery {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#gallery h2 {
+    text-align: center;
+    color: #00796b; /* Dark teal */
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted minimum size */
+    gap: 15px; /* Space between images */
+    padding: 0 10px; /* Add some padding */
+}
+
+.gallery-item {
+    text-align: center; /* Center the text */
+}
+
+.gallery-item img {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.gallery-item p {
+    margin-top: 10px; /* Space above event name */
+    color: #004d40; /* Darker teal for text */
+    font-size: 1.1em; /* Font size for event names */
+}
+
+
+/* Office Bearers Section */
+#office-bearers {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#office-bearers h2 {
+    text-align: center;
+    color: #00796b; /* Dark teal */
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px;
+}
+
+.office-bearers-list {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+    padding: 0 10px; /* Add some padding */
+}
+
+.office-bearer {
+    background-color: #ffffff; /* White background for each card */
+    border: 2px solid #00796b; /* Dark teal border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.office-bearer h3 {
+    color: #004d40; /* Darker teal for names */
+    font-size: 1.5em; /* Slightly larger font */
+    margin-bottom: 5px; /* Space below name */
+}
+
+.office-bearer p {
+    color: #616161; /* Gray color for positions */
+    font-size: 1.1em; /* Font size for position */
+}
+
+.office-bearer:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Objectives Section */
+#objectives {
+    background-color: #f0f4f8; /* Light gray-blue background */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#objectives h2 {
+    text-align: center;
+    color: #003366;
+}
+
+
+/* Announcements Section Styles */
+#announcements {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#announcements h2 {
+    text-align: center;
+    color: #1e88e5; /* Blue */
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px;
+}
+
+.announcement-item {
+    background-color: #ffffff; /* White background for each item */
+    border: 2px solid #1e88e5; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0; /* Space between items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.announcement-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.announcement-item h3 {
+    color: #0d47a1; /* Darker blue for titles */
+    margin: 0; /* Remove default margin */
+}
+
+.announcement-item p {
+    color: #616161; /* Gray color for text */
+    margin: 5px 0; /* Space above and below */
+}
+
+
+/* Winners Section Styles */
+#winners {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#winners h2 {
+    text-align: center;
+    color: #1e88e5; /* Blue */
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px;
+}
+
+.winner-item {
+    background-color: #ffffff; /* White background for each item */
+    border: 2px solid #1e88e5; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0; /* Space between items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.winner-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.winner-item h3 {
+    color: #0d47a1; /* Darker blue for titles */
+    margin: 0; /* Remove default margin */
+}
+
+.winner-item p {
+    color: #616161; /* Gray color for text */
+    margin: 5px 0; /* Space above and below */
+}
+
+
+/* Leaderboard Section Styles */
+#leaderboard {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#leaderboard h2 {
+    text-align: center;
+    color: #1e88e5; /* Blue */
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px;
+}
+
+.leaderboard-item {
+    background-color: #ffffff; /* White background for each item */
+    border: 2px solid #1e88e5; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0; /* Space between items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.leaderboard-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.leaderboard-item h3 {
+    color: #0d47a1; /* Darker blue for titles */
+    margin: 0; /* Remove default margin */
+}
+
+.leaderboard-item p {
+    color: #616161; /* Gray color for text */
+    margin: 5px 0; /* Space above and below */
+}

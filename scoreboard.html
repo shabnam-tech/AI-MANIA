@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard - CSEA Connect</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Scoreboard Section Styles */
+    #scoreboard {
+      background-color: #e3f2fd; /* Light blue background */
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    #scoreboard h2 {
+      text-align: center;
+      color: #1e88e5; /* Blue */
+      font-size: 2.5em; /* Larger heading */
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%; /* Full width */
+      border-collapse: collapse; /* Collapse borders */
+      margin: 0 auto; /* Center table */
+    }
+
+    th, td {
+      padding: 15px; /* Padding for cells */
+      text-align: center; /* Center align text */
+      border: 2px solid #1e88e5; /* Blue border */
+    }
+
+    th {
+      background-color: #0d47a1; /* Darker blue for header */
+      color: #ffffff; /* White text for header */
+      font-size: 1.5em; /* Larger font size for header */
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f4ff; /* Light blue for even rows */
+    }
+
+    tr:hover {
+      background-color: #b3e5fc; /* Light hover effect */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>CSEA Connect</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+        <li><a href="winners.html">Winners</a></li>
+        <li><a href="scoreboard.html">Scoreboard</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#office-bearers">Office Bearers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="scoreboard">
+      <h2>Scoreboard</h2>
+      <table>
+        <tr>
+          <th>Team</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td>Team A</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Team B</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Team C</td>
+          <td>78</td>
+        </tr>
+        <tr>
+          <td>Team D</td>
+          <td>85</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
